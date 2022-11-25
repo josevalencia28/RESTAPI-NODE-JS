@@ -1,8 +1,6 @@
-const { response } = require('express');
-const validatorHandler = require('./../middleware/validador.handler');
-const { createUsersSchemas,  updateUsersSchemas, deleteUsersSchemas} = require('./../schemas/users.schemas')
-const conexion = require('../../database/conexion');
-const {consultarUsers, consultarUsersById, CreateUsers, DeleteUsersById,updateUsersM} = require('./../model/modelo.query');
+//const { response } = require('express');
+//const conexion = require('../../database/conexion');
+const {consultarUsers, consultarUsersById, CreateUsers, DeleteUsersById,updateUsersM} = require('../model/modelo.users');
 
 
 const getUsers = async (rq, res) => {

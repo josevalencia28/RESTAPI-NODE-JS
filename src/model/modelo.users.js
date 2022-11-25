@@ -18,8 +18,8 @@ const consultarUsersById = async (id) => {
 
   try {
 
-    const query = `SELECT * FROM users WHERE id = $1`;
     const params = [id]
+    const query = `SELECT * FROM users WHERE id = $1`;
 
     response = await conexion.query(query, params)
 
@@ -30,7 +30,7 @@ const consultarUsersById = async (id) => {
   return response;
 };
 
-const CreateUsers = async( name, email) => {
+const CreateUsers = async ( name, email) => {
     let response;
     
     try {
