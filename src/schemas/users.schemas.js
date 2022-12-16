@@ -1,7 +1,7 @@
 const Joi = require('joi');
 
 const id = Joi.string();
-const name = Joi.string();
+const name = Joi.string.min(3).max(30);
 const email = Joi.string();
 
 const createUsersSchemas = Joi.object({

@@ -1,5 +1,7 @@
 const conexion = require("../../database/conexion");
 
+
+//Consulta de Usuarios
 const consultarUsers = async () => {
   let response;
 
@@ -12,6 +14,7 @@ const consultarUsers = async () => {
 
   return response;
 };
+
 
 const consultarUsersById = async (id) => {
   let response;
@@ -42,7 +45,6 @@ const CreateUsers = async ( name, email) => {
     }
     return response;
 };
-
 
 const DeleteUsersById = async(id) => {
   let response;

@@ -43,8 +43,7 @@ const CreateProducts = async ( name, precio, fabricado, fecha_vencimiento) => {
     return response;
 };
 
-
-const DeleteProductsById = async(codigo) => {
+const DeleteProductsById = async (codigo) => {
   let response;
 
   try {
@@ -58,7 +57,7 @@ const DeleteProductsById = async(codigo) => {
   return response;
 };
 
-const UpdateProducts = async(name, precio, fabricado, fecha_vencimiento, codigo) => {
+const UpdateProducts = async (name, precio, fabricado, fecha_vencimiento, codigo) => {
   let response;
 
     try {
